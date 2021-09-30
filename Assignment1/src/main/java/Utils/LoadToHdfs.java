@@ -8,24 +8,32 @@ import org.apache.hadoop.fs.FSDataOutputStream;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 
+import java.io.File;
 import java.io.IOException;
 
-public class LoadToHdfs {
+import static Constants.HadoopConstants.ASSISGNMENT1_INPUTS;
 
-    public static void main(String[] args) throws IOException {
-        LoadToHdfs obj = new LoadToHdfs();
-        obj.loadToHdfs();
+
+public class LoadToHdfs {
+    public static FileSystem fileSystem;
+
+//    public static void main(String[] args) throws IOException {
+//        LoadToHdfs obj = new LoadToHdfs();
+//        obj.loadToHdfs();
+//    }
+
+    public LoadToHdfs(FileSystem fileSystem){
+        this.fileSystem = fileSystem;
     }
 
     public void loadToHdfs() throws IOException {
-        Configuration configuration = new Configuration();
-        configuration.set("fs.defaultFS", "hdfs://localhost:9000");
-        FileSystem fileSystem = FileSystem.get(configuration);
-        String dest = "Assignments/Assisgnment1/inputs";
+        String dest = ASSISGNMENT1_INPUTS;
         Path destPath = new Path(dest);
         if(!checkIfDirectoryExists(fileSystem, destPath)) {
-            System.out.println("directory do not exists");
+            System.out.println("Directory do not exists");
             loadFromLocalToHdfs(fileSystem, destPath);
+        }else{
+            System.out.println("Directory already exists");
         }
     }
 
