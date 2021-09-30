@@ -16,6 +16,8 @@ dependencies {
     implementation group: 'org.apache.hadoop', name: 'hadoop-common', version: '3.3.1'
     implementation group: 'org.apache.hadoop', name: 'hadoop-client', version: '3.3.1'
     implementation group: 'com.opencsv', name: 'opencsv', version: '3.7'
+    implementation group: 'org.apache.hbase', name: 'hbase-common', version: '0.98.6-hadoop2'
+    implementation group: 'org.apache.hbase', name: 'hbase-client', version: '1.4.3'
 }
 
 test {

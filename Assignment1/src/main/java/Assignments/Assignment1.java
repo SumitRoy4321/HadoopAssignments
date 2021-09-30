@@ -5,9 +5,18 @@ import Utils.GetHdfsInstance;
 import Utils.LoadToHdfs;
 import org.apache.commons.io.IOUtils;
 import org.apache.hadoop.fs.*;
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.hbase.HBaseConfiguration;
 
+import org.apache.hadoop.hbase.client.HTable;
+import org.apache.hadoop.hbase.client.Put;
+import org.apache.hadoop.hbase.util.Bytes;
+
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Assignment1 {
 
@@ -24,17 +33,37 @@ public class Assignment1 {
     private void loadHbaseTable() throws IOException {
         Path[] filePaths = readDirectoryContents();
         FSDataInputStream inputStream = null;
-//        Configuration config = HBaseConfiguration.create();
-
+        Configuration config = HBaseConfiguration.create();
+        HTable hTable = new HTable(config, "peoples");
+        int rowNumber=1;
+        int fileCount = 1;
         for( Path path : filePaths){
-//            System.out.println(path);
+            System.out.println("#### file count :" + fileCount + " " + path);
+            fileCount++;
             inputStream = fileSystem.open(path);
-            String out= IOUtils.toString(inputStream, "UTF-8");
-
-            String[] data = out.split(";");
-            System.out.println(Arrays.toString(data));
-
+            BufferedReader br = new BufferedReader( new InputStreamReader( inputStream, "UTF-8" ) );
+            System.out.println(br.readLine());
+            String line = br.readLine();
+            while(line != null) {
+                String out= br.readLine();
+                String[] data = out.split(";");
+                System.out.println(" inserting data  : " + Arrays.toString(data) + " with size : " + data.length);
+                Put p = new Put(Bytes.toBytes("row" + rowNumber));
+                p.addColumn(Bytes.toBytes("people"), Bytes.toBytes("name"), Bytes.toBytes(data[0]));
+                p.addColumn(Bytes.toBytes("people"), Bytes.toBytes("age"), Bytes.toBytes(data[1]));
+                p.addColumn(Bytes.toBytes("people"), Bytes.toBytes("country"), Bytes.toBytes(data[2]));
+                p.addColumn(Bytes.toBytes("people"), Bytes.toBytes("building_code"), Bytes.toBytes(data[3]));
+                p.addColumn(Bytes.toBytes("people"), Bytes.toBytes("phone"), Bytes.toBytes(data[4]));
+                p.addColumn(Bytes.toBytes("people"), Bytes.toBytes("address"), Bytes.toBytes(data[5]));
+                hTable.put(p);
+                System.out.println(rowNumber + "   data inserted");
+                rowNumber++;
+                line = br.readLine();
+            }
         }
+        hTable.close();
+        inputStream.close();
+        fileSystem.close();
     }
 
     private Path[] readDirectoryContents() throws IOException {

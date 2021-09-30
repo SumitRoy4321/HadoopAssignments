@@ -1,106 +1,101 @@
 name;age;country;building_code;phone;address
-Gilda;35;Fiji;609;+1 922 948 4262;Strasbourg
-Beth;45;Moldova, Republic of;33;+01　611	428 7206;Las Vegas
-Dede;10;Greenland;814;(843).576 1057;Panama City
-Kristina;12;Ireland;718;+1 (050) 988 1328;Lomé
-Chrystel;15;Antigua and Barbuda;970;759 174 3565;Nanjing
-Maurene;6;"Cote D""Ivoire";181;376) 174 1892;Tallinn
-Georgetta;37;Latvia;688;014 0031089;Colombo
-Cathyleen;11;Faroe Islands;768;660 403 5595;Nanning
-Bernardine;44;Puerto Rico;570;751 502 6000;Paris
-Janey;27;Israel;975;"(421 1068489";Johannesburg
-Phylis;17;French Guiana;500;(803-875 2663;Guwahati
-Stacey;17;Haiti;245;145) 577 4799;Toulouse
-Orsola;40;Myanmar;806;+1 (624432 0046;Chişinău
-Cathie;45;Taiwan, Province of China;183;+01	733) 040 6525;Avarua
-Estell;53;India;19;+1 (738) 720 9384;Adelaide
-Elka;11;Papua New Guinea;439;+1 (274 645 9165;The Hague
-Gertrud;13;Cook Islands;384;198 589 7934;Damascus
-Sherrie;40;Myanmar;801;"+1﻿(598 084 5040";Thimphu
-Marika;3;Oman;793;+1(958 080 0933;Valdivia
-Theodora;10;Suriname;479;+1 228 440 2697;Karachi
-Jorry;53;Syrian Arab Republic;341;709)᠎5635549;Nukuʻalofa
-Arlena;38;Jersey;788;"(535﻿770 2576";Weno
-Valera;31;Nicaragua;801;+01᠎(197 506 5678;Saint-Pierre
-Nariko;48;Guam;110;(424 650 8913;Campinas
-Annora;51;Benin;124;(020　568　4896;Mamoudzou
-Damaris;52;Cook Islands;186;+01	(102) 750 8898;Bujumbura
-Jillayne;46;Angola;307;038 365 7301;Faisalabad
-Nelle;45;Azerbaijan;852;+01 299 335 9421;Timbuktu
-Mureil;8;Germany;573;+01 757)438 6492;Palma
-Aurore;24;New Caledonia;848;+1　(358-504᠎3548;Calama
-Suzette;60;Antarctica;697;950) 747.4560;Córdoba
-Barbara;6;Kiribati;76;(369 477 2955;Bandung
-Chickie;43;Faroe Islands;865;"+1 (966)﻿589 8024";Saint-Denis
-Jaclyn;60;South Georgia and the South Sandwich Islands;738;114) 525 7703;Yogyakarta (city)
-Kittie;40;Cayman Islands;583;"+1　(432)
-348 6553";Melbourne
-Sallie;24;Sao Tome and Principe;342;388 656 8495;Macau
-Libbie;37;Oman;848;"+01 (953
-335 9483";Surat
-Karina;6;Kyrgyzstan;213;+1 (004.271 8087;Bogotá
-Rhea;26;Brunei Darussalam;445;+1 (295 554 8380;Vienna
-Alyssa;51;Mayotte;686;471) 239 3298;Guatemala City
-Juliane;25;Romania;471;440.921 3094;Jeddah
-Larine;48;Israel;600;"669)249 7069";Shenzhen
-Jorry;29;South Africa;515;+1 322)-434	3740;Lhasa
-Nonnah;31;Malta;711;(098᠎494-8378;Monterrey
-Maurene;13;Hungary;562;"(612 043﻿4176";San Salvador
-Bernardine;41;Cyprus;264;"+1(292 534 5881";Xi'an
-Raquela;41;Croatia;965;"+01 290﻿348　0211";Dublin
-Benita;8;Kuwait;776;+1 756 308 0797;Nukus
-Rhoda;18;Ghana;446;+01 (191)-558 0842;Buenos Aires
-Blondelle;34;Djibouti;552;(940 062 2543;Libreville
-Fred;37;Cameroon;49;180)᠎380	1138;Nagoya
-Mahalia;24;Iceland;885;(756-124 1235;Kaohsiung
-Susan;51;Liechtenstein;937;+1 138)᠎028 2426;Bergen
-Elmira;36;British Indian Ocean Territory;61;616) 580-0974;Barranquilla
-Pierette;22;Iceland;319;"+01300 6690808";Chihuahua
-Adore;21;Malaysia;865;"(186176 2996";Malmö
-Winifred;36;Argentina;179;+1 934) 491 3956;Kunming
-Alyssa;22;Croatia;203;+01 398).633.4922;Johor Bahru
-Carly;19;Algeria;438;+1 (377 674 1590;Apia
-Hildegaard;14;Sweden;116;+01 (234) 7530192;Huế
-Diena;47;Saint Vincent and the Grenadines;16;+01 621 166 0092;Saint Petersburg
-Keelia;38;Congo;717;+01 110) 550-3271;Padang
-Kelly;24;Papua New Guinea;82;+1 903) 1405846;Saint Petersburg
-Asia;33;Dominica;755;(567) 110 2288;Manama
-Jobi;43;El Salvador;265;+01　686 686　6606;Mata-Utu
-Karly;35;Colombia;636;(628271 6679;Port Vila
-Deloria;36;Afghanistan;278;(769 517 7219;Leeds
-Katharina;14;Cameroon;464;(700).366.0428;Jaipur
-Jillayne;34;Lebanon;910;(975) 369 0498;Timbuktu
-Brana;58;Jersey;568;+1199 9960266;Warsaw
-Gui;2;Haiti;181;(576) 277 5641;La Paz
-Louella;36;Puerto Rico;96;"704) 172﻿0472";Ibadan
-Roseline;13;Japan;612;009) 345 9022;Funafuti
-Noelle;57;Japan;309;"+01
-(084)
-560 4787";Kano
-Janeczka;33;Morocco;543;+01　869)531 3510;Tunis
-Anthia;53;Bulgaria;368;"936)﻿627 1028";Nairobi
-Hettie;27;Cyprus;865;+1	(099)᠎762 3064;Qingdao
-Celisse;25;Turkey;954;+01 592 050 0434;Bamako
-Bettine;48;British Indian Ocean Territory;468;+1(955) 106 0176;Naples
-Mary;60;Bouvet Island;179;959) 868 6887;Warsaw
-Arlena;15;Aruba;970;+01 270421 6334;Ponta Delgada
-Peri;41;Turkmenistan;275;"+1﻿454 147 1174";Peshawar
-Sheree;15;Saint Helena;299;699 129᠎6267;Belfast
-Lanae;28;Cocos (Keeling) Islands;71;(489 473 0595;Medellín
-Daphne;2;Samoa;883;+01 873418 4228;Toulouse
-Demetris;45;Singapore;123;+1 (414) 091 8274;Xi'an
-Edith;6;Kenya;743;+1 (774 277 1702;Amritsar
-Viviene;59;Wallis and Futuna;883;"+01(576) 9732640";Bratislava
-Carilyn;30;Solomon Islands;921;(101) 895 7528;George Town
-Carlie;30;French Polynesia;659;"413﻿028 3078";Miri
-Kore;59;Uzbekistan;552;+1217) 926 8020;São José dos Campos
-Ernesta;10;Comoros;635;(917 631᠎6581;Malacca Town
-Jeanna;36;Somalia;295;776) 4658475;Oslo
-Liana;12;Trinidad and Tobago;948;"+1
-(110 546 2433";Portland
-Kial;40;Oman;197;960)302 9164;Tashkent
-Madeleine;11;Saint Lucia;856;(050)-850 9022;Shenyang
-Rayna;8;Haiti;235;+1 (688) 420 3318;Gold Coast
-Dulcinea;41;Malaysia;235;(320 317 8996;Tallinn
-Belva;18;Åland Islands;309;+01 (672 125 5102;Nizhny Novgorod
-Deirdre;10;Antarctica;770;+01᠎616 791 9079;New Orleans
+Jaclyn;25;Heard Island and Mcdonald Islands;718;1457201285;Seattle
+Susette;27;Malawi;304;9434255047;Gangtok
+Jennica;3;Kuwait;38;1052554435;Monrovia
+Rebeca;20;Yemen;542;6100505058;Hagåtña
+Elmira;29;Tunisia;907;6974291459;Columbus
+Carree;40;Palestinian Territory, Occupied;853;4872665473;Honolulu
+Kathi;59;Cameroon;532;6452600742;Tagbilaran
+Millie;51;Iceland;566;0385856869;Surat Thani
+Dulce;30;Faroe Islands;419;3341885005;Bamako
+Cassandra;37;Guam;356;8770554560;Harare
+Bibby;13;Equatorial Guinea;432;4444676938;Saint Petersburg
+Corene;28;Virgin Islands, British;624;1828639249;Aarhus
+Margarette;15;Cayman Islands;583;6303878340;Kigali
+Brooks;12;Tokelau;928;1953097798;Cali
+Merci;14;Ghana;639;3648036602;Prague
+Susette;33;British Indian Ocean Territory;765;6194108923;Belmopan
+Sharai;23;Korea, Republic of;113;1664083114;Gdańsk
+Karolina;46;Dominican Republic;490;0265756838;Yamoussoukro
+Anestassia;1;Hungary;734;0803062814;Chittagong
+Marsiella;33;Czech Republic;69;6806021194;Hangzhou
+Doralynne;31;Faroe Islands;436;3671175262;Funafuti
+Hayley;17;Papua New Guinea;769;2518862162;Fortaleza
+Lelah;49;Costa Rica;219;3289156289;Mexicali
+Lisette;13;Burkina Faso;242;7193446811;Sapporo
+Ekaterina;51;Namibia;94;3230380301;Macapá
+Tonia;19;Brazil;659;9320130355;Vilnius
+Flory;20;Tokelau;636;3895173974;Detroit
+Ana;56;Chile;408;1470231902;Praia
+Fayre;52;French Guiana;815;2766753590;Zapopan
+Millie;59;Guinea;712;7378392864;Greenwich
+Olwen;44;Singapore;963;5865459528;Las Palmas de Gran Canaria
+Patricia;55;Gabon;83;4822827408;Santiago de Cuba
+Laurene;26;Singapore;846;7055640509;Saint-Denis
+Merry;52;Yemen;280;7942895761;Pristina
+Krystle;60;Greece;53;3363736364;Kaesong
+Lindie;37;Sudan;256;7897121907;Perm
+Shandie;39;Germany;591;6529332632;Rotterdam
+Arabel;9;Finland;921;7753223367;Lobamba
+Fayre;23;Nepal;824;4485856914;Phuket (city)
+Etta;54;Congo;50;6009347901;Riverside
+Jackie;24;Northern Mariana Islands;165;4046375704;Saint-Denis
+Stacey;1;Sudan;471;0414467777;Brisbane
+Danny;33;Netherlands;968;9413694799;Omdurman
+Candy;55;Cambodia;146;0862938215;Chongjin
+Ofilia;52;Brunei Darussalam;839;9401848020;Tampa
+Leona;45;Turks and Caicos Islands;212;6539902561;Bridgetown
+Cordi;58;France;44;5965514628;Saint-Denis
+Susette;56;Burkina Faso;806;1278224539;Bahía Blanca
+Florencia;17;Paraguay;805;1062715083;San Antonio
+Lanna;10;Mauritania;729;2984401504;Koulikoro
+Adriana;16;Lesotho;934;5037297631;Chişinău
+Roberta;47;"Lao People""S Democratic Republic";38;5395656426;Odessa
+Courtnay;41;Isle of Man;649;4013901151;Belgrade
+Lynde;12;Djibouti;828;6402034459;Ouagadougou
+Margette;35;Korea, Republic of;286;6939620641;Espoo
+Jinny;10;Samoa;994;7606540520;Porto Alegre
+Joy;51;China;453;3427086795;Semarang
+Cristine;47;Gambia;296;9446997828;Blantyre
+Kara-Lynn;11;Oman;173;9074248235;Mbabane
+Melanie;51;Belgium;230;2510611250;Gaza
+Chrystel;15;Brazil;334;6688910990;Copenhagen
+Lorie;19;Kenya;191;2733039680;Manchester
+Jean;6;Antarctica;578;9158971649;Shenzhen
+Alejandra;26;Ecuador;744;5091817009;Stockholm
+Merci;5;Saint Kitts and Nevis;26;0585985258;Oranjestad
+Mady;9;Sweden;21;6162101694;Tamale
+Andeee;23;Egypt;936;2272458184;Dar es Salaam
+Veda;11;Malawi;51;6982427326;Espoo
+Rosanne;29;Ukraine;165;6502319532;Kingston
+Gaylene;21;Kazakhstan;51;6828014853;Baghdad
+Jeanna;37;Uganda;650;4036967084;Rabi Island
+Imojean;51;Guinea;357;6400988454;Algiers
+Jackie;4;Panama;611;2588288266;Lubumbashi
+Nadine;28;Egypt;654;8770442195;Rotterdam
+Norine;3;Burundi;637;8530501170;Hanoi
+Marita;19;Senegal;900;4882979516;Lusaka
+Farrah;3;Mayotte;406;2208191188;Tashkent
+Ruthe;22;Faroe Islands;987;2358841899;Andorra la Vella
+Nita;26;India;247;7708423949;Shillong
+Marjie;58;Anguilla;401;7256251635;Hamburg
+Fayre;45;Martinique;963;6638987682;Darwin
+Kristina;43;Algeria;551;1873144571;Seattle
+Wanda;45;Iceland;992;3113899318;Colombo
+Jenda;2;United Arab Emirates;859;1886146548;Seattle
+Mireielle;15;Guernsey;520;3668599400;Xi'an
+Mignon;18;Mauritius;75;3693039364;Colombo
+Teriann;29;Luxembourg;239;3685263554;Sana'a
+Ofilia;8;New Zealand;336;0655879448;Santiago
+Aigneis;46;Christmas Island;214;3042882764;Adelaide
+Cathie;31;Antigua and Barbuda;262;2054626735;Cannes
+Alisha;12;Luxembourg;239;6600034305;Bahía Blanca
+Ekaterina;11;Iraq;719;4235984641;Willemstad
+Darlleen;18;Timor-Leste;301;6955761433;Cebu City
+Yetty;1;Jamaica;52;5213029202;Jeddah
+Adriana;17;Aruba;550;8829653468;Gold Coast
+Kenna;9;"Korea, Democratic People""S Republic of";711;9450553346;Ushuaia
+Collen;17;Lebanon;78;4069405932;Konya
+Sindee;34;Netherlands;522;8519072660;Townsville
+Robbi;7;Nicaragua;530;1597932240;Rockhampton
+Glynnis;46;Cayman Islands;25;4619733142;Tunis
