@@ -8,8 +8,8 @@ import org.apache.hadoop.fs.*;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.HBaseConfiguration;
 
-import org.apache.hadoop.hbase.client.HTable;
-import org.apache.hadoop.hbase.client.Put;
+import org.apache.hadoop.hbase.TableName;
+import org.apache.hadoop.hbase.client.*;
 import org.apache.hadoop.hbase.util.Bytes;
 
 import java.io.BufferedReader;
@@ -18,6 +18,9 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.Scanner;
 
+import static Constants.HadoopConstants.ASSISGNMENT1_INPUTS;
+import static Constants.HadoopConstants.ASSISGNMENT1_INPUTS_SRC;
+
 public class Assignment1 {
 
     public static FileSystem fileSystem;
@@ -25,7 +28,7 @@ public class Assignment1 {
     public static void main(String[] args) throws IOException {
         fileSystem = GetHdfsInstance.getInstance();
         LoadToHdfs loadInputsToHdfs = new LoadToHdfs(fileSystem);
-        loadInputsToHdfs.loadToHdfs();
+        loadInputsToHdfs.loadToHdfs(ASSISGNMENT1_INPUTS, ASSISGNMENT1_INPUTS_SRC);
         Assignment1 assignment1 = new Assignment1();
         assignment1.loadHbaseTable();
     }
@@ -34,7 +37,10 @@ public class Assignment1 {
         Path[] filePaths = readDirectoryContents();
         FSDataInputStream inputStream = null;
         Configuration config = HBaseConfiguration.create();
-        HTable hTable = new HTable(config, "peoples");
+        Connection connection = ConnectionFactory.createConnection(config);
+
+        Table table = connection.getTable(TableName.valueOf("peoples"));
+
         int rowNumber=1;
         int fileCount = 1;
         for( Path path : filePaths){
@@ -55,13 +61,14 @@ public class Assignment1 {
                 p.addColumn(Bytes.toBytes("people"), Bytes.toBytes("building_code"), Bytes.toBytes(data[3]));
                 p.addColumn(Bytes.toBytes("people"), Bytes.toBytes("phone"), Bytes.toBytes(data[4]));
                 p.addColumn(Bytes.toBytes("people"), Bytes.toBytes("address"), Bytes.toBytes(data[5]));
-                hTable.put(p);
+                table.put(p);
                 System.out.println(rowNumber + "   data inserted");
                 rowNumber++;
                 line = br.readLine();
             }
         }
-        hTable.close();
+        table.close();
+        connection.close();
         inputStream.close();
         fileSystem.close();
     }

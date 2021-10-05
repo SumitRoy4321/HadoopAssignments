@@ -26,19 +26,18 @@ public class LoadToHdfs {
         this.fileSystem = fileSystem;
     }
 
-    public void loadToHdfs() throws IOException {
-        String dest = ASSISGNMENT1_INPUTS;
+    public void loadToHdfs(String dest, String src) throws IOException {
         Path destPath = new Path(dest);
         if(!checkIfDirectoryExists(fileSystem, destPath)) {
             System.out.println("Directory do not exists");
-            loadFromLocalToHdfs(fileSystem, destPath);
+            loadFromLocalToHdfs(fileSystem, destPath, src);
         }else{
             System.out.println("Directory already exists");
         }
     }
 
-    private void loadFromLocalToHdfs(FileSystem fileSystem, Path destPath) throws IOException {
-        Path srcPath = new Path("Assignment1input0");
+    private void loadFromLocalToHdfs(FileSystem fileSystem, Path destPath, String src) throws IOException {
+        Path srcPath = new Path(src);
         fileSystem.copyFromLocalFile(srcPath, destPath);
         System.out.println("loaded file to hdfs");
     }
@@ -46,4 +45,5 @@ public class LoadToHdfs {
     private boolean checkIfDirectoryExists(FileSystem fileSystem, Path destPath) throws IOException {
         return fileSystem.exists(destPath);
     }
+
 }
