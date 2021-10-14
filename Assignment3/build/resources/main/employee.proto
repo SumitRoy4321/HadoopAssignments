@@ -2,6 +2,8 @@ syntax="proto3";
 
 package proto.employee;
 
+option java_multiple_files = true;
+
 message Employee{
   //employee_id;name;building_code;floor_number;salary;department
   int64 employee_id =1;
@@ -10,6 +12,7 @@ message Employee{
   Floor floor_number = 4;
   int64 salary=5;
   string department=6;
+  int32 cafeteria_code=7;
 }
 
 enum Floor{
@@ -24,4 +27,8 @@ enum Floor{
   EIGHT=8;
   NINE=9;
   TEN=10;
+}
+
+message EmployeeList{
+  repeated Employee employees = 1;
 }

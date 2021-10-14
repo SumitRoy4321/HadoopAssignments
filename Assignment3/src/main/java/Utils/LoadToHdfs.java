@@ -1,17 +1,9 @@
 package Utils;
 
-import org.apache.commons.io.IOUtils;
-import org.apache.hadoop.conf.Configuration;
-import org.apache.hadoop.fs.FSDataInputStream;
-import org.apache.hadoop.fs.FSDataOutputStream;
-
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 
-import java.io.File;
 import java.io.IOException;
-
-import static Constants.HadoopConstants.ASSISGNMENT1_INPUTS;
 
 
 public class LoadToHdfs {
@@ -35,6 +27,11 @@ public class LoadToHdfs {
 
             System.out.println("Directory already exists");
         }
+    }
+
+    public void copyToHdfs(String src, String dest) throws IOException {
+        fileSystem.copyFromLocalFile(new Path(src), new Path(dest));
+
     }
 
     private void loadFromLocalToHdfs(FileSystem fileSystem, Path destPath, String src) throws IOException {

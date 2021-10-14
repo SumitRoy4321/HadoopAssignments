@@ -32,6 +32,7 @@ public class LoadToHdfs {
             System.out.println("Directory do not exists");
             loadFromLocalToHdfs(fileSystem, destPath, src);
         }else{
+
             System.out.println("Directory already exists");
         }
     }
