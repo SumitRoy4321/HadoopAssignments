@@ -60,7 +60,11 @@ public class Assignment4_2 {
             fs.delete(output, true);
         }
         FileOutputFormat.setOutputPath(job, new Path(ASSIGNMENT_4_2_HDFS_OUTPUT_PATH));
-        job.setNumReduceTasks(0);
-        System.out.println(job.waitForCompletion(true));
+//        job.setNumReduceTasks(1);
+        boolean b = job.waitForCompletion(true);
+        System.out.println(b);
+        if (job.isSuccessful()) {
+            System.out.println("Cafeteria code added to employee table");
+        }
     }
 }
