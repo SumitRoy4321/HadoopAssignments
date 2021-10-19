@@ -1,4 +1,4 @@
-package Assignment4;
+package Assignment4_1;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
@@ -16,7 +16,7 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import java.io.IOException;
 import java.net.URI;
 
-import static Assignment4.Constants.*;
+import static Assignment4_1.Constants.*;
 
 public class MapDriver {
 

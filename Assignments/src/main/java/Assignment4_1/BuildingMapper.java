@@ -1,4 +1,4 @@
-package Assignment4;
+package Assignment4_1;
 
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
@@ -11,13 +11,13 @@ import proto.building.BuildingList;
 
 import java.util.Arrays;
 
-import static Assignment4.Constants.*;
+import static Assignment4_1.Constants.*;
 
 public class BuildingMapper extends Mapper<NullWritable, BytesWritable, ImmutableBytesWritable, Put> {
 
 
     ImmutableBytesWritable TABLE_NAME_TO_INSERT = new ImmutableBytesWritable(Bytes.toBytes(BUILDING_TABLE_NAME));
-
+    int row = 1;
     public void map(NullWritable key, BytesWritable value, Context context) {
         try {
 
@@ -26,8 +26,9 @@ public class BuildingMapper extends Mapper<NullWritable, BytesWritable, Immutabl
 
             for(Building building:buildingList.getBuildingsList()){
                 int building_code=building.getBuildingCode();
+                System.out.println("building row " + row);
                 byte byteArray[]=building.toByteArray();
-                Put put = new Put(Bytes.toBytes(building_code));
+                Put put = new Put(Bytes.toBytes(row++));
                 put.addColumn(Bytes.toBytes(BUILDING), Bytes.toBytes(BUILDING_DETAILS), byteArray);
                 context.write(TABLE_NAME_TO_INSERT, put);
             }

@@ -1,4 +1,4 @@
-package Assignment4;
+package Assignment4_1;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
@@ -12,7 +12,7 @@ import org.apache.hadoop.io.IOUtils;
 import java.io.*;
 import java.net.URI;
 
-import static Assignment4.Constants.*;
+import static Assignment4_1.Constants.*;
 
 
 public class FilesToHDFS {
@@ -46,6 +46,11 @@ public class FilesToHDFS {
     public void createTableBuilding(String tableNameToCreate) throws IOException {
 
         Configuration config = HBaseConfiguration.create();
+        config.addResource("/opt/homebrew/Cellar/hbase/2.4.6/libexec/conf/hbase-site.xml");
+        config.set("hbase.zookeeper.quorum","localhost");
+        config.set("hbase.zookeeper.property.client.port","2181");
+        config.setInt("timeout", 120000);
+        config.set("hbase.master", "localhost:60000");
         Connection connection = ConnectionFactory.createConnection(config);
         Admin hAdmin = connection.getAdmin();
         if (hAdmin.tableExists(TableName.valueOf(tableNameToCreate))) {
@@ -64,6 +69,11 @@ public class FilesToHDFS {
 
     public void createTableEmployee(String tableNameToCreate) throws IOException {
         Configuration config = HBaseConfiguration.create();
+        config.addResource("/opt/homebrew/Cellar/hbase/2.4.6/libexec/conf/hbase-site.xml");
+        config.set("hbase.zookeeper.quorum","localhost");
+        config.set("hbase.zookeeper.property.client.port","2181");
+        config.setInt("timeout", 120000);
+        config.set("hbase.master", "localhost:60000");
         Connection connection = ConnectionFactory.createConnection(config);
         Admin hAdmin = connection.getAdmin();
         if (hAdmin.tableExists(TableName.valueOf(tableNameToCreate))) {
